@@ -27,7 +27,6 @@
 <table>
 <theader>
 <tr><th colspan="6">INFORMACIÓN BÁSICA</th></tr>
-
 </theader>
 <tbody>
 <tr><td>ASIGNATURA:</td><td colspan="5">Programación Web 2</td></tr>
@@ -40,9 +39,9 @@
 </tr>
 <tr><td colspan="6">INTEGRANTES:
 <ul>
-<li>Cozco Mauri Yoset ----------------------ycozco@unsa.edu.pe</li>
-<li>César Alejandro Garay Bedregal----------cgarayb@unsa.edu.pe</li>
-<li>Vladimir Sulla Quispe-------------------vsullaq@unsa.edu.pe</li>
+<li>Cozco Mauri Yoset --------------------ycozco@unsa.edu.pe</li>
+<li>César Alejandro Garay Bedregal--------cgarayb@unsa.edu.pe</li>
+<li>Vladimir Sulla Quispe-----------------vsullaq@unsa.edu.pe</li>
 </ul>
 </td>
 </<tr>
