@@ -1,6 +1,5 @@
 from interpreter import draw
 from chessPictures import *
 
-# Programa que dibuja recuadros de un tablero de ajedrez
-# A diferencia de Ejercicio2c este cambia los colores
-draw(square.negative().join(square).horizontalRepeat(4))
+# Este programa dibuja una linea de recuadros de ajedrez
+draw(square.join(square.negative()).horizontalRepeat(4))
