@@ -181,17 +181,17 @@ B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las
 
 </td><tr>
 #(a)
-</tr><tr>
+</tr><tr><br>
 #(b)
-</tr><tr>
+</tr><tr><br>
 #(c)
-</tr><tr>
+</tr><tr><br>
 #(d)
-</tr><tr>
+</tr><tr><br>
 #(e)
-</tr><tr>
+</tr><tr><br>
 #(f)
-</tr><tr>
+</tr><tr><br>
 #(g)
 </tr>
 
