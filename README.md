@@ -69,13 +69,13 @@
 A. 
 -   verticalMirror: Devuelve el espejo vertical de la imagen.
     
-    ```python
+```python
     def verticalMirror(self):
         vertical = []
         for value in self.img:
             vertical.append(value[::-1])
         return Picture(vertical)
-    ```
+```
 </tr><br>
 <tr>
 -   horizontalMirror: Devuelve el espejo horizontal de la imagen.
