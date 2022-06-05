@@ -72,8 +72,12 @@ A. <br><br>
 ```python
     def verticalMirror(self):
         vertical = []
+        #se recorre el arreglo self de manera que se agrega en el arreglo vertical de forma 
+        #que se empieza desde el ultimo valor hasta el inicial.
         for value in self.img:
             vertical.append(value[::-1])
+        # al ser un arreglo vertical, lo devolver de la forma Picture(vertical) 
+        # para devolver asi un Picture
         return Picture(vertical)
 ```
 </tr>
@@ -83,8 +87,11 @@ A. <br><br>
 ```python
   def horizontalMirror(self):
     horizontal = []
+    #se recorre el arreglo de manera que agregamos en la posicion 0 todos los valores de tmp
+    #de tal manera que lograriamos el espejo en horizontal 
     for tmp  in self.img:
       horizontal.insert(0,tmp)
+    #igualmente se devuelve de la forma Picture(horizontal) para que se figura(Picture)
     return Picture(horizontal)
 ```
 </tr><tr>
