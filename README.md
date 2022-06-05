@@ -180,19 +180,21 @@ A. <br><br>
 B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):<br>
 
 </td><tr>
-#(a)
+#Ejercicio2 a)
+[Ejercicio2_a](results/ejercicio2_a.png)
+
 </tr><tr><br>
-#(b)
+#Ejercicio2 b)
 </tr><tr><br>
-#(c)
+#Ejercicio2 c)
 </tr><tr><br>
-#(d)
+#Ejercicio2 d)
 </tr><tr><br>
-#(e)
+#Ejercicio2 e)
 </tr><tr><br>
-#(f)
+#Ejercicio2 f)
 </tr><tr><br>
-#(g)
+#Ejercicio2 g)
 </tr>
 
 
