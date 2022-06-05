@@ -87,7 +87,7 @@ A. <br><br>
       horizontal.insert(0,tmp)
     return Picture(horizontal)
 ```
-</tr><tr><br>
+</tr><tr>
 -   negative: Devuelve un negativo de la imagen.
 
 ```python
@@ -100,25 +100,84 @@ A. <br><br>
       negative.append(iteration)
       iteration = ''
     return Picture(negative)
-
 ```
-</tr><tr><br>
+</tr><tr>
 -   join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual.
-    ![code_4](results/code_4.png)
-</tr><tr><br>
+
+```python
+  def join(self, p):
+    joined = []
+    position = 0
+    for tmp in self.img:
+      joined.append(tmp + " " +p.img[position])
+      position += 1
+    return Picture(joined)
+```
+</tr><tr>
 -   up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual.
-    ![code_5](results/code_5.png)
-</tr><tr><br>
+
+```python
+  def up(self, p):
+    image = self.img
+    image.extend(p.img)
+    return Picture(image)
+```
+</tr><tr>
 -   under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual.
-    ![code_6](results/code_6.png)
-</tr><tr><br>
+
+```python
+  def under(self, p):
+    image = []
+    for i in range(0, len(p.img)):
+      line = ""
+      for j in range(0, len(p.img[i])):
+        if (p.img[i][j] == " "):
+          line += self.img[i][j]
+        else:
+          line += p.img[i][j]
+      image.append(line)
+    return Picture(image)
+```
+</tr><tr>
 -   horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n.
 
-</tr><tr><br>
+```python
+  def horizontalRepeat(self, n):
+    image = []	
+    for i in range(0, len(self.img)):
+      image.append(self.img[i] * n)
+    return Picture(image)
+```
+</tr><tr>
 -   verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
-    ![code_8](results/code_8.png)
+
+```python
+  def verticalRepeat(self, n):
+    VRepeat = []
+    i = 0
+    while i < n:
+      i += 1
+      for value in self.img:
+        VRepeat.append(value)
+    return Picture(VRepeat)
+```
+</tr><tr>
+-   #Extra: Sólo para realmente viciosos 
+
+```python
+  def rotate(self):
+    rotate = []
+    i = 0
+    for value in self.img:
+      rotate.append(value[0]) # Este bucle hará que nuestro arreglo tenga el tamaño del arreglo de la figura
+    while i < len(rotate):
+      for value in self.img:
+        rotate[i] += value[i]
+      i += 1
+    return Picture(rotate)
+```
 </tr>
-B.
+B. <br>
 
 </td>
 </<tr>
