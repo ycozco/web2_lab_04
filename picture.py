@@ -26,6 +26,10 @@ class Picture:
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
+    negative = []
+    iteration = '';
+    for value in self.img:
+      
     return Picture(None)
 
   def join(self, p):
