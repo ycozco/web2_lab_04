@@ -29,7 +29,10 @@ class Picture:
     negative = []
     iteration = '';
     for value in self.img:
-      
+      for char in value:
+        iteration += self._invColor(char)
+        print(iteration)
+      negative.append(iteration)
     return Picture(None)
 
   def join(self, p):
