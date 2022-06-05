@@ -71,5 +71,9 @@ class Picture:
     i = 0
     for value in self.img:
       rotate.append(value[0]) # Este bucle hará que nuestro arreglo tenga el tamaño del arreglo de la figura
-    return Picture(None)
+    while i < len(rotate):
+      for value in self.img:
+        rotate[i] += value[i]
+      i += 1
+    return Picture(rotate)
 
