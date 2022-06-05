@@ -59,8 +59,9 @@ class Picture:
     i = 0
     while i < n:
       i += 1
-      # Debe ir otro bucle con el proceso
-    return Picture(None)
+      for value in self.img:
+        VRepeat.append(value)
+    return Picture(VRepeat)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
