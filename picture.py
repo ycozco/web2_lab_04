@@ -37,7 +37,7 @@ class Picture:
     joined = []
     position = 0
     for tmp in self.img:
-      joined.append(tmp + " " +p.img[position])
+      joined.append(tmp + "" +p.img[position])
       position += 1
     return Picture(joined)
 
@@ -47,9 +47,7 @@ class Picture:
     image.extend(p.img)
     return Picture(image)
 
-
   def under(self, p):
-
     image = []
     for i in range(0, len(p.img)):
       line = ""
@@ -59,7 +57,6 @@ class Picture:
         else:
           line += p.img[i][j]
       image.append(line)
-
     return Picture(image)
 
   def horizontalRepeat(self, n):

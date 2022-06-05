@@ -76,36 +76,202 @@ A. <br><br>
             vertical.append(value[::-1])
         return Picture(vertical)
 ```
-</tr><br>
+</tr>
 <tr>
 -   horizontalMirror: Devuelve el espejo horizontal de la imagen.
-    ![code_2](results/code_2.png)
-</tr><tr><br>
+
+```python
+  def horizontalMirror(self):
+    horizontal = []
+    for tmp  in self.img:
+      horizontal.insert(0,tmp)
+    return Picture(horizontal)
+```
+</tr><tr>
 -   negative: Devuelve un negativo de la imagen.
-    ![code_3](results/code_3.png)
-</tr><tr><br>
+
+```python
+  def negative(self):
+    negative = []
+    iteration = '';
+    for value in self.img:
+      for char in value:
+        iteration += self._invColor(char)
+      negative.append(iteration)
+      iteration = ''
+    return Picture(negative)
+```
+</tr><tr>
 -   join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual.
-    ![code_4](results/code_4.png)
-</tr><tr><br>
+
+```python
+  def join(self, p):
+    joined = []
+    position = 0
+    for tmp in self.img:
+      joined.append(tmp + " " +p.img[position])
+      position += 1
+    return Picture(joined)
+```
+</tr><tr>
 -   up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual.
-    ![code_5](results/code_5.png)
-</tr><tr><br>
+
+```python
+  def up(self, p):
+    image = self.img
+    image.extend(p.img)
+    return Picture(image)
+```
+</tr><tr>
 -   under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual.
-    ![code_6](results/code_6.png)
-</tr><tr><br>
+
+```python
+  def under(self, p):
+    image = []
+    for i in range(0, len(p.img)):
+      line = ""
+      for j in range(0, len(p.img[i])):
+        if (p.img[i][j] == " "):
+          line += self.img[i][j]
+        else:
+          line += p.img[i][j]
+      image.append(line)
+    return Picture(image)
+```
+</tr><tr>
 -   horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n.
 
-</tr><tr><br>
+```python
+  def horizontalRepeat(self, n):
+    image = []	
+    for i in range(0, len(self.img)):
+      image.append(self.img[i] * n)
+    return Picture(image)
+```
+</tr><tr>
 -   verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
-    ![code_8](results/code_8.png)
-</tr>
-B.
 
-</td>
-</<tr>
-#
+```python
+  def verticalRepeat(self, n):
+    VRepeat = []
+    i = 0
+    while i < n:
+      i += 1
+      for value in self.img:
+        VRepeat.append(value)
+    return Picture(VRepeat)
+```
+</tr><tr>
+-   #Extra: Sólo para realmente viciosos 
+
+```python
+  def rotate(self):
+    rotate = []
+    i = 0
+    for value in self.img:
+      rotate.append(value[0]) # Este bucle hará que nuestro arreglo tenga el tamaño del arreglo de la figura
+    while i < len(rotate):
+      for value in self.img:
+        rotate[i] += value[i]
+      i += 1
+    return Picture(rotate)
+```
 </tr>
 
+## B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):<br>
+</td><tr>
+
+## Ejercicio2 a)
+
+```python
+from interpreter import draw
+from chessPictures import *
+#Creo un Picture de la imagen del caballo negro
+negativeK= knight.negative()
+#Creo en un Picture la primera linea incluyendo un caballo y el caballo(negativo)
+firstLine = knight.join(negativeK)
+#Creo en un Picture la segunda liena incluyenda el caballo(negativo) y el caballo
+secondLine = negativeK.join(knight)
+#Usando la funcion up de Picture, creo un Picture con la primera linea y la segunda linea
+result = firstLine.up(secondLine)
+draw(result)
+```
+![Ejercicio2_a](results/ejercicio2_a.png)
+</tr><tr><br>
+
+## Ejercicio2 b)
+
+```python
+from interpreter import draw
+from chessPictures import *
+# Creo un caballo negativo
+negativeK= knight.negative()
+# creo la primera linea con el caballo normal y con join agrego el caballo Negativo
+firstLine = knight.join(negativeK)
+#creo el caballo negativo invertido verticalmente 
+negativeInv = negativeK.verticalMirror()
+#creo la segunda linea con el caballo negativativamente invertido y con join agrego 
+#el caballo normal invertido verticalmente
+secondLine = negativeInv.join(knight.verticalMirror())
+#con la funcion up agrego la primera linea y la segunda linea
+result = firstLine.up(secondLine)
+
+draw(result)
+```
+![Ejercicio2_b](results/ejercicio2_b.png)
+</tr><tr><br>
+
+## Ejercicio2 c)
+
+```python
+from interpreter import draw
+from chessPictures import *
+# Ejercicio 2c 
+# Se hace una concatenacion usando la funcion join de la Clase Picture
+# 4 veces concatenamos queen
+result = queen.join(queen.join(queen.join(queen)))
+
+draw(result)
+```
+
+![Ejercicio2_c](results/ejercicio2_c.png)
+</tr><tr><br>
+
+## Ejercicio2 d)
+
+```python
+
+```
+
+![Ejercicio2_d](results/ejercicio2_d.png)
+</tr><tr><br>
+
+## Ejercicio2 e)
+
+```python
+
+```
+
+![Ejercicio2_e](results/ejercicio2_e.png)
+</tr><tr><br>
+
+## Ejercicio2 f)
+
+```python
+
+```
+
+![Ejercicio2_f](results/ejercicio2_f.png)
+</tr><tr><br>
+
+## Ejercicio2 g)
+
+```python
+
+```
+
+![Ejercicio2_g](results/ejercicio2_g.png)
+</tr>
 
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO:
