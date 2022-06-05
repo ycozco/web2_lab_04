@@ -347,22 +347,22 @@ draw(fila1.up(fila2.up(fila3a6.up(fila7.up(fila8)))))
 
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO:
-<ul>
-<li>
-</li>
+-   ¿Qué son los archivos *.pyc?
+
+-   ¿Para qué sirve el directorio __pycache__?
+
+-   ¿Cuáles son los usos y lo que representa el subguión en Python?
 
 
-</ul>
-</td>
-</<tr>
+</tr>
  
 </tr>
 <tr><td colspan="6">III. CONCLUSIONES:
-<ul>
-<li></li>
 
-</td>
-</<tr>
+-   
+-   
+-   
+</tr>
 
 </tdbody>
 </table>
