@@ -55,6 +55,11 @@ class Picture:
     return Picture(None)
 
   def verticalRepeat(self, n):
+    VRepeat = []
+    i = 0
+    while i < n:
+      i += 1
+      # Debe ir otro bucle con el proceso
     return Picture(None)
 
   #Extra: Sólo para realmente viciosos 
