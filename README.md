@@ -180,6 +180,7 @@ A. <br><br>
 B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):<br>
 
 </td><tr>
+
 ## Ejercicio2 a)
 
 ```python
@@ -195,17 +196,17 @@ secondLine = negativeK.join(knight)
 result = firstLine.up(secondLine)
 draw(result)
 ```
-
 ![Ejercicio2_a](results/ejercicio2_a.png)
 </tr><tr><br>
+
 ## Ejercicio2 b)
 
 ```python
 
 ```
-
 ![Ejercicio2_b](results/ejercicio2_b.png)
 </tr><tr><br>
+
 ## Ejercicio2 c)
 
 ```python
@@ -214,6 +215,7 @@ draw(result)
 
 ![Ejercicio2_c](results/ejercicio2_c.png)
 </tr><tr><br>
+
 ## Ejercicio2 d)
 
 ```python
@@ -222,6 +224,7 @@ draw(result)
 
 ![Ejercicio2_d](results/ejercicio2_d.png)
 </tr><tr><br>
+
 ## Ejercicio2 e)
 
 ```python
@@ -230,6 +233,7 @@ draw(result)
 
 ![Ejercicio2_e](results/ejercicio2_e.png)
 </tr><tr><br>
+
 ## Ejercicio2 f)
 
 ```python
@@ -238,6 +242,7 @@ draw(result)
 
 ![Ejercicio2_f](results/ejercicio2_f.png)
 </tr><tr><br>
+
 ## Ejercicio2 g)
 
 ```python
