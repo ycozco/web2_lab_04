@@ -67,5 +67,9 @@ class Picture:
   def rotate(self):
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
     o antihorario"""
+    rotate = []
+    i = 0
+    for value in self.img:
+      rotate.append(value[0]) # Este bucle hará que nuestro arreglo tenga el tamaño del arreglo de la figura
     return Picture(None)
 
