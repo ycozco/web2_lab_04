@@ -177,13 +177,23 @@ A. <br><br>
     return Picture(rotate)
 ```
 </tr>
-B. <br>
+B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):<br>
 
-</td>
-</<tr>
-#
+</td><tr>
+#(a)
+</tr><tr>
+#(b)
+</tr><tr>
+#(c)
+</tr><tr>
+#(d)
+</tr><tr>
+#(e)
+</tr><tr>
+#(f)
+</tr><tr>
+#(g)
 </tr>
-
 
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO:
