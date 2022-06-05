@@ -37,7 +37,7 @@ class Picture:
     joined = []
     position = 0
     for tmp in self.img:
-      joined.append(tmp + " " +p.img[position])
+      joined.append(tmp + "" +p.img[position])
       position += 1
     return Picture(joined)
 
