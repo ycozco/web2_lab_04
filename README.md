@@ -66,31 +66,41 @@
 <tr><td colspan="6">
 <tr>
 #I. SOLUCIÓN DE EJERCICIOS PROBLEMAS:
--   verticalMirror: Devuelve el espejo vertical de la imagen
-    ![code_1](results/code_1.png)
+A. 
+-   verticalMirror: Devuelve el espejo vertical de la imagen.
+    
+    ```python
+    def verticalMirror(self):
+        vertical = []
+        for value in self.img:
+            vertical.append(value[::-1])
+        return Picture(vertical)
+    ```
 </tr><br>
 <tr>
--   horizontalMirror: Devuelve el espejo horizontal de la imagen
+-   horizontalMirror: Devuelve el espejo horizontal de la imagen.
     ![code_2](results/code_2.png)
 </tr><tr><br>
--   negative: Devuelve un negativo de la imagen
+-   negative: Devuelve un negativo de la imagen.
     ![code_3](results/code_3.png)
 </tr><tr><br>
--   join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
+-   join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual.
     ![code_4](results/code_4.png)
 </tr><tr><br>
--   up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
+-   up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual.
     ![code_5](results/code_5.png)
 </tr><tr><br>
--   under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
+-   under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual.
     ![code_6](results/code_6.png)
 </tr><tr><br>
--   horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
-    ![code_7](results/code_7.png)
+-   horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n.
+
 </tr><tr><br>
 -   verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
     ![code_8](results/code_8.png)
 </tr>
+B.
+
 </td>
 </<tr>
 #
