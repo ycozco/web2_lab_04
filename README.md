@@ -76,13 +76,32 @@ A. <br><br>
             vertical.append(value[::-1])
         return Picture(vertical)
 ```
-</tr><br>
+</tr>
 <tr>
 -   horizontalMirror: Devuelve el espejo horizontal de la imagen.
-    ![code_2](results/code_2.png)
+
+```python
+  def horizontalMirror(self):
+    horizontal = []
+    for tmp  in self.img:
+      horizontal.insert(0,tmp)
+    return Picture(horizontal)
+```
 </tr><tr><br>
 -   negative: Devuelve un negativo de la imagen.
-    ![code_3](results/code_3.png)
+
+```python
+  def negative(self):
+    negative = []
+    iteration = '';
+    for value in self.img:
+      for char in value:
+        iteration += self._invColor(char)
+      negative.append(iteration)
+      iteration = ''
+    return Picture(negative)
+
+```
 </tr><tr><br>
 -   join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual.
     ![code_4](results/code_4.png)
