@@ -66,38 +66,30 @@
 <tr><td colspan="6">
 <tr>
 #I. SOLUCIÓN DE EJERCICIOS PROBLEMAS:
-
-    1.  verticalMirror: Devuelve el espejo vertical de la imagen
-    ![code_1](results/code_1.png)
+1.  verticalMirror: Devuelve el espejo vertical de la imagen
+        ![code_1](results/code_1.png)
 </tr>
 <tr>
-
-    2.  horizontalMirror: Devuelve el espejo horizontal de la imagen
-    ![code_2](results/code_2.png)
+2.  horizontalMirror: Devuelve el espejo horizontal de la imagen
+        ![code_2](results/code_2.png)
 </tr><tr>
-
-    3.  negative: Devuelve un negativo de la imagen
-    ![code_3](results/code_3.png)
+3.  negative: Devuelve un negativo de la imagen
+        ![code_3](results/code_3.png)
 </tr><tr>
-
-    4.  join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
-    ![code_4](results/code_4.png)
+4.  join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
+        ![code_4](results/code_4.png)
 </tr><tr>
-
-    5.  up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
-    ![code_5](results/code_5.png)
+5.  up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
+        ![code_5](results/code_5.png)
 </tr><tr>
-
-    6.  under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
-    ![code_6](results/code_6.png)
+6.  under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
+        ![code_6](results/code_6.png)
 </tr><tr>
-
-    7.  horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
-    ![code_7](results/code_7.png)
+7.  horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
+        ![code_7](results/code_7.png)
 </tr><tr>
-
-    8.  verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
-    ![code_8](results/code_8.png)
+8.  verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
+        ![code_8](results/code_8.png)
 </tr>
 </td>
 </<tr>
