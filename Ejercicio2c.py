@@ -6,4 +6,3 @@ from chessPictures import *
 result = queen.join(queen.join(queen.join(queen)))
 
 draw(result)
-
