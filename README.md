@@ -66,7 +66,7 @@
 <tr><td colspan="6">
 <tr>
 #I. SOLUCIÓN DE EJERCICIOS PROBLEMAS:
-A. 
+A. <br><br>
 -   verticalMirror: Devuelve el espejo vertical de la imagen.
     
 ```python
