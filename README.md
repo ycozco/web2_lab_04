@@ -181,7 +181,8 @@ B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las
 
 </td><tr>
 #Ejercicio2 a)
-[Ejercicio2_a](results/ejercicio2_a.png)
+
+![Ejercicio2_a](results/ejercicio2_a.png)
 
 </tr><tr><br>
 #Ejercicio2 b)
