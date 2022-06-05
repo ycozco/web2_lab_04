@@ -347,6 +347,7 @@ draw(fila1.up(fila2.up(fila3a6.up(fila7.up(fila8)))))
 
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
+
 -   ¿Qué son los archivos *.pyc?
 
 -   ¿Para qué sirve el directorio __pycache__?
