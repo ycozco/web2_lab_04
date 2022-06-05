@@ -1,6 +1,7 @@
 from interpreter import draw
 from chessPictures import *
-
-testPicture = rock.horizontalMirror()
-
-draw(testPicture)
+negativeK= knight.negative()
+firstLine = knight.join(negativeK)
+secondLine = negativeK.join(knight)
+result = secondLine.under(secondLine)
+draw(result)

@@ -21,7 +21,7 @@ class Picture:
     horizontal = []
     for tmp  in self.img:
       horizontal.insert(0,tmp)
-    return horizontal
+    return Picture(horizontal)
 
   def negative(self):
     negative = []
@@ -35,9 +35,11 @@ class Picture:
 
   def join(self, p):
     joined = []
-    joined.append(self)
-    joined.append(p)
-    return joined
+    position = 0
+    for tmp in self.img:
+      joined.append(tmp + " " +p.img[position])
+      position += 1
+    return Picture(joined)
 
   def up(self, p):
     
