@@ -12,7 +12,6 @@ class Picture:
     return inverter[color]
 
   def verticalMirror(self):
-    """ Devuelve el espejo vertical de la imagen """
     vertical = []
     for value in self.img:
       vertical.append(value[::-1])
@@ -25,7 +24,6 @@ class Picture:
     return horizontal
 
   def negative(self):
-    """ Devuelve un negativo de la imagen """
     negative = []
     iteration = '';
     for value in self.img:
@@ -42,15 +40,14 @@ class Picture:
     return joined
 
   def up(self, p):
-    """Devuelve una figura poniendo la figura p debajo de la figura actual"""
+    
     image = self.img
     image.extend(p.img)
     return Picture(image)
 
 
   def under(self, p):
-    """ Devuelve una nueva figura poniendo la figura p sobre la
-        figura actual """
+
     image = []
     for i in range(0, len(p.img)):
       line = ""
@@ -64,8 +61,6 @@ class Picture:
     return Picture(image)
 
   def horizontalRepeat(self, n):
-    """ Devuelve una nueva figura repitiendo la figura actual al costado
-        la cantidad de veces que indique el valor de n """
     image = []	
     for i in range(0, len(self.img)):
       image.append(self.img[i] * n)
@@ -82,8 +77,6 @@ class Picture:
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
-    """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
-    o antihorario"""
     rotate = []
     i = 0
     for value in self.img:
