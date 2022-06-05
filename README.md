@@ -177,8 +177,8 @@ A. <br><br>
     return Picture(rotate)
 ```
 </tr>
-B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):<br>
 
+## B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):<br>
 </td><tr>
 
 ## Ejercicio2 a)
