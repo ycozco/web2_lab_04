@@ -356,6 +356,7 @@ draw(fila1.up(fila2.up(fila3a6.up(fila7.up(fila8)))))
     Los archivos .pyc son creados por el intérprete de Python cuando se importa un archivo .py. Contienen el "código de bytes compilado" del módulo/programa importado para que la "traducción" del código fuente al código de bytes (que solo debe hacerse una vez) se pueda omitir en importaciones posteriores si el .pyc es más nuevo que el .py correspondiente archivo.Una vez que se genera el archivo *.pyc, no es necesario el archivo *.py, a menos que lo edite.Este archivo contiene el código de bytes para que importarlo más tarde sea más fácil (y rápido)
 
 -   ¿Para qué sirve el directorio __pycache__?
+    _pycache_ es un directorio donde se guardan las versiones simplificadas de nuestros archivos .py, estas versiones se ejecutan con mayor velocidad que las originales, ya que son archivos ya compilados y listos para ser ejecutados. Estos archivos son la versión 'Bytecode' de nuestros archivos python.
 
 -   ¿Cuáles son los usos y lo que representa el subguión en Python?
 
