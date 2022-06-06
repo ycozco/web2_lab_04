@@ -366,7 +366,7 @@ draw(fila1.up(fila2.up(fila3a6.up(fila7.up(fila8)))))
 </tr>
 <tr><td colspan="6">III. CONCLUSIONES:
 
--   
+-   Tras la realización de los ejercicios se concluye que, el uso de draw() es único, de tal manera que todo lo escrito despues como otros draw() será un código inalcanzable, es por eso que los métodos implementados son importantes, ya que nos permite crear el tablero de ajedres como una sola imagen, a partir de concatenaciones, append, bucles, etc, y así poder utilizar draw() una sola vez.
 -   
 -   
 </tr>
