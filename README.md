@@ -123,8 +123,11 @@ A. <br><br>
 
 ```python
   def up(self, p):
+    #creacion de una image temporal
     image = self.img
+    #esta linea añade las lineas de la imagen p al image
     image.extend(p.img)
+    ##luego retorna la imagen indexada
     return Picture(image)
 ```
 </tr><tr>
@@ -132,10 +135,14 @@ A. <br><br>
 
 ```python
   def under(self, p):
+    #imagen/arreglo con  la que se va a trabajar
     image = []
     for i in range(0, len(p.img)):
+      #line representa cada linea de self/p[i] 
       line = ""
       for j in range(0, len(p.img[i])):
+        #este if...else compara si el elemento de cada caracter String/linea p.img[i] es un espacio para asi reemplazarla con 
+        #la imagen que se ubicara debajo de la imagen. En caso contrario se pondra el caracter de p.img
         if (p.img[i][j] == " "):
           line += self.img[i][j]
         else:
@@ -148,9 +155,12 @@ A. <br><br>
 
 ```python
   def horizontalRepeat(self, n):
+    #esta es la imagen con la que se va a trabajar
     image = []	
+    #en un arreglo se va añadiendo a image n veces repetida cada linea de self
     for i in range(0, len(self.img)):
       image.append(self.img[i] * n)
+    #se transforma a una clase picture
     return Picture(image)
 ```
 </tr><tr>
