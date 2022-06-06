@@ -86,6 +86,7 @@ A. <br><br>
   def horizontalMirror(self):
     horizontal = []
     for tmp  in self.img:
+    #recorremos el arreglo self, agregamos los valores tmp en la posicion 0 logrando el espejo
       horizontal.insert(0,tmp)
     #igualmente se devuelve de la forma Picture(horizontal) para que se figura(Picture)   
     return Picture(horizontal)
