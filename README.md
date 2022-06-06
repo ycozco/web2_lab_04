@@ -352,17 +352,17 @@ draw(fila1.up(fila2.up(fila3a6.up(fila7.up(fila8)))))
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
 
--   ¿Qué son los archivos *.pyc?
+-   ¿Qué son los archivos *.pyc?: 
     Los archivos pyc son creados por el intérprete de python cuando compila. Estos archivos contienen el traductor bytecode que traduce el código a bytecode. Lo que permite que se pueda omitir a la segunda ejecución si se hace una primera. Son como los archivos class en java cuyo bytecode se encuentra dentro de este, si bien este archivo ayuda a que una posterior ejecución sea mas rapida ejecutar a partir de este archivo no variará a si lo ejecutamos desde el archivo .py.
 
--   ¿Para qué sirve el directorio __pycache__?
+-   ¿Para qué sirve el directorio __pycache__?: 
     _pycache_ es un directorio donde se guardan las versiones simplificadas de nuestros archivos .py, estas versiones se ejecutan con mayor velocidad que las originales, ya que son archivos ya compilados y listos para ser ejecutados. Estos archivos son la versión 'Bytecode' de nuestros archivos python.
 
--   ¿Cuáles son los usos y lo que representa el subguión en Python?
+-   ¿Cuáles son los usos y lo que representa el subguión en Python?: 
+    El guion bajo en python significa el tipo de comportamiento que tendrá una variable, clase o método, pudiendo variar de esta manera entre un guion bajo antes de la palabra, después o doble guiones antes y después. En el archivo de picture, se usa para el __init__, esto es conocido como métodos mágicos que al tener guiones bajo doble a los costados se indica que es un método específico de python, en el caso de __init_ es similar al public void main de Java. Cuando el guion bajo esta puesto antes de una clase, método o variable, significa que este es privado. 
 
 
 </tr>
- 
 </tr>
 <tr><td colspan="6">III. CONCLUSIONES:
 
