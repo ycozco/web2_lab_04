@@ -85,6 +85,7 @@ A. <br><br>
     horizontal = []
     for tmp  in self.img:
       horizontal.insert(0,tmp)
+    #igualmente se devuelve de la forma Picture(horizontal) para que se figura(Picture)   
     return Picture(horizontal)
 ```
 </tr><tr>
