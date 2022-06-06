@@ -30,7 +30,7 @@
 </theader>
 <tbody>
 <tr><td>ASIGNATURA:</td><td colspan="5">Programación Web 2</td></tr>
-<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Practica 04</td></tr>
+<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Practica 03</td></tr>
 <tr>
 <td>NÚMERO DE PRÁCTICA:</td><td>04</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
@@ -39,9 +39,9 @@
 </tr>
 <tr><td colspan="6">INTEGRANTES:
 <ul>
-<li>Cozco Mauri Yoset --------------------ycozco@unsa.edu.pe</li>
-<li>César Alejandro Garay Bedregal--------cgarayb@unsa.edu.pe</li>
-<li>Vladimir Sulla Quispe-----------------vsullaq@unsa.edu.pe</li>
+<li>Cozco Mauri Yoset -------------------- ycozco@unsa.edu.pe</li>
+<li>Garay Bedregal César Alejandro -------- cgarayb@unsa.edu.pe</li>
+<li>Sulla Quispe Vladimir ----------------- vsullaq@unsa.edu.pe</li>
 </ul>
 </td>
 </<tr>
@@ -98,11 +98,12 @@ A. <br><br>
   def negative(self):
     negative = []
     iteration = '';
-    for value in self.img:
-      for char in value:
-        iteration += self._invColor(char)
-      negative.append(iteration)
-      iteration = ''
+    for value in self.img:  # Este bucle itera cada elemento del arreglo self.img
+      for char in value:    # Este for itera cada caracter de los elementos del arreglo self.img
+        iteration += self._invColor(char)   # iteration concatena todos los caracteres pasados por _invColor,
+                                            # método del profesor que devuelve el caracter en su versión negativa
+      negative.append(iteration)    # En este arreglo se guarda la concatenación hecha por iteration y al empezar
+      iteration = ''                # de nuevo se regresa iteration a una variable de texto vacío
     return Picture(negative)
 ```
 </tr><tr>
@@ -159,9 +160,9 @@ A. <br><br>
   def verticalRepeat(self, n):
     VRepeat = []
     i = 0
-    while i < n:
+    while i < n:    # Este bucle repetira el procedimiento las n veces que el usuario quiera
       i += 1
-      for value in self.img:
+      for value in self.img:    # Este for agrega (append) como nuevos elementos cada linea de la misma pieza al arreglo
         VRepeat.append(value)
     return Picture(VRepeat)
 ```
@@ -174,11 +175,11 @@ A. <br><br>
     i = 0
     for value in self.img:
       rotate.append(value[0]) # Este bucle hará que nuestro arreglo tenga el tamaño del arreglo de la figura
-    while i < len(rotate):
-      for value in self.img:
-        rotate[i] += value[i]
-      i += 1
-    return Picture(rotate)
+    while i < len(rotate):      # Este while y for permite realizar el giro de la pieza siguiendo la siguiente lógica:
+      for value in self.img:    # En un nuevo arreglo (rotate[]), el primer elemento (rotate[0]) concatenará todos los
+        rotate[i] += value[i]   # primeros caracteres de cada elemento de self.img, rotate[1] concatenará igualmente
+      i += 1                    # todos los segundos caracteres de cada elemento de self.img, y así consecutivamente.
+    return Picture(rotate)      # Devolviendo finalmente la imagen con el efecto de haberse girado 90°
 ```
 </tr>
 
