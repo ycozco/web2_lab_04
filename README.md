@@ -75,6 +75,7 @@ A. <br><br>
         for value in self.img:
             # recorremos self y agregamos en vertical desde el ultimo valor hacia el inicial
             vertical.append(value[::-1])
+        #retornamos el arreglo como Picture
         return Picture(vertical)
 ```
 </tr>
