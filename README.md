@@ -256,7 +256,7 @@ draw(result)
 ```python
 from interpreter import draw
 from chessPictures import *
-# Este programa dibuja una linea de recuadros de ajedrez
+# Este programa junta un cuadro de ajedrez, saca el negativo de un cuadro, y luego repite este conjunto 4 veces
 draw(square.join(square.negative()).horizontalRepeat(4))
 ```
 
@@ -270,7 +270,7 @@ from interpreter import draw
 from chessPictures import *
 
 # Programa que dibuja recuadros de un tablero de ajedrez
-# A diferencia de Ejercicio2c este cambia los colores
+# A diferencia de Ejercicio2c este cambia los colores de blanco negro a negro blanco
 draw(square.negative().join(square).horizontalRepeat(4))
 ```
 
@@ -283,10 +283,7 @@ draw(square.negative().join(square).horizontalRepeat(4))
 from interpreter import draw
 from chessPictures import *
 
-from interpreter import draw
-from chessPictures import *
-
-#Image es una linea de cuadros de ajedrez vertical
+#Image es una linea de cuadros de ajedrez vertical primero convierte a Picture un conjunto squarenegro y blanco y luego este conjunto lo repite 2 veces 
 image = Picture(square.negative().img+square.img).verticalRepeat(2)
 
 #Esta parte junta la parte negativa de image con image y la repite cuatro veces 
