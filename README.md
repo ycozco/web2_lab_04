@@ -396,9 +396,11 @@ draw(fila1.up(fila2.up(fila3a6.up(fila7.up(fila8)))))
 </tr>
 <tr><td colspan="6">
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>https://www.tutorialspoint.com/What-are-pyc-files-in-Python#:~:text=pyc%20files%20are%20created%20by,is%20newer%20than%20the%20corresponding%20.</li>
+<li>https://stackoverflow.com/questions/8822335/what-do-the-python-file-extensions-pyc-pyd-pyo-stand-for#:~:text=you've%20written.-,.,later%20easier%20(and%20faster).
+</li>
+<li>https://web.archive.org/web/20160130165632/http://www.network-theory.co.uk/docs/pytut/CompiledPythonfiles.html
+</li>
 
 <li></li>
 </ul>
