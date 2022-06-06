@@ -73,6 +73,7 @@ A. <br><br>
     def verticalMirror(self):
         vertical = []
         for value in self.img:
+            # recorremos self y agregamos en vertical desde el ultimo valor hacia el inicial
             vertical.append(value[::-1])
         return Picture(vertical)
 ```
