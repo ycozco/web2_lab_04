@@ -1,4 +1,4 @@
-# web2_lab_04
+# INFORME DE LABORATORIO 04
 <div align="center">
 <table>
     <theader>
@@ -366,9 +366,9 @@ draw(fila1.up(fila2.up(fila3a6.up(fila7.up(fila8)))))
 </tr>
 <tr><td colspan="6">III. CONCLUSIONES:
 
--   Tras la realización de los ejercicios se concluye que, el uso de draw() es único, de tal manera que todo lo escrito despues como otros draw() será un código inalcanzable, es por eso que los métodos implementados son importantes, ya que nos permite crear el tablero de ajedres como una sola imagen, a partir de concatenaciones, append, bucles, etc, y así poder utilizar draw() una sola vez.
--   
--   
+-   Tras la realización de los ejercicios se concluye que, el uso de draw() es único, de tal manera que todo lo escrito despues como otros draw() será un código inalcanzable, es por eso que los métodos implementados son importantes, ya que nos permite crear el tablero de ajedrez como una sola imagen, a partir de concatenaciones, append, bucles, etc, y así poder utilizar draw() una sola vez.
+-   El uso de los entornos virtuales en los proyectos es de suma importancia, ya que nos permite aislar las librerías que vamos a utilizar de otros entornos virtuales, esto lo podemos ver al agregar el módulo de pygame, que se añadía específicamente al entorno virtual en el que estabamos trabajando, y de esa manera funcionaban los imports de interpreter.py
+-   Python es un lenguaje de programación que a diferencia de otros lenguajes, cuida su correcta compilación a travez de la sintaxis del código, donde la indentación toma mucha importancia. La sintaxis de este lenguaje a diferencia de java, es mucho más sencillo de entender y visualmente más cómodo, las funciones que implementamos trabajaban similar a otros lenguajes, solo que no era necesario definir el tipo de dato de entrada, por lo que se asume que python utiliza variables genéricas que se interpretan como un tipo específico una vez se les sea asignado un valor. 
 </tr>
 
 </tdbody>
